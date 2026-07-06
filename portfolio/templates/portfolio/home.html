@@ -1,0 +1,260 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home | My Portfolio{% endblock %}
+
+{% block content %}
+
+<!-- ================= HERO / HOME ================= -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="hello">Hello, I am</p>
+        <h1>Satyarajsinh Jadeja</h1>
+        <h2>Python Django Developer</h2>
+        <p class="hero-text">
+            I build responsive and dynamic web applications using
+            HTML5, CSS3, JavaScript, Python Django, and SQLite.
+        </p>
+        <div class="hero-buttons">
+            <a href="{% static 'portfolio_design/files/resume.pdf' %}" download class="btn">Download Resume</a>
+            <a href="#projects" class="btn btn-outline">View Projects</a>
+        </div>
+    </div>
+    <div class="hero-image">
+        <a href="https://www.linkedin.com/in/satyaraj-jadeja" target="_blank" rel="noopener noreferrer"
+           class="photo-link" aria-label="Visit my LinkedIn profile">
+            <img src="{% static 'portfolio_design/images/profile.jpg' %}" alt="Satyarajsinh Jadeja">
+            <span class="photo-overlay">
+                <i class="fa-brands fa-linkedin"></i>
+            </span>
+        </a>
+    </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="section" id="about">
+    <div class="section-inner reveal">
+        <p class="eyebrow">About Me</p>
+        <h2 class="section-title">A bit about my journey</h2>
+        <p class="about-text">
+            I'm a Computer Science undergraduate at Silver Oak University, Ahmedabad, currently
+            pursuing my B.Tech with a CGPA of 8.5/10. I enjoy building full-stack web applications
+            with Python and Django, and I care about pairing clean, responsive interfaces with
+            solid backend architecture. I recently completed a Software Development internship at
+            Enjay IT Solutions, where I contributed to frontend development on a CRM platform and
+            got hands-on exposure to real production workflows. Outside of coursework, I've built
+            projects like a Sales CRM system with role-based dashboards, and I hold certifications
+            in Java (NPTEL, IIT Kharagpur) and Python. I'm always exploring new tools — including
+            AI-assisted development workflows — and looking for opportunities to put my Django and
+            full-stack skills to work on real products.
+        </p>
+    </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section class="section section-alt" id="skills">
+    <div class="section-inner reveal">
+        <p class="eyebrow">What I Work With</p>
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card reveal">
+                <h3><i class="fa-solid fa-code"></i> Languages</h3>
+                <div class="tags">
+                    <span class="tag">C</span>
+                    <span class="tag">C++</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">JavaScript</span>
+                </div>
+            </div>
+            <div class="skill-card reveal">
+                <h3><i class="fa-solid fa-display"></i> Frontend</h3>
+                <div class="tags">
+                    <span class="tag">HTML5</span>
+                    <span class="tag">CSS3</span>
+                    <span class="tag">DOM Manipulation</span>
+                    <span class="tag">Responsive UI Design</span>
+                </div>
+            </div>
+            <div class="skill-card reveal">
+                <h3><i class="fa-solid fa-server"></i> Backend</h3>
+                <div class="tags">
+                    <span class="tag">Django</span>
+                    <span class="tag">Flask</span>
+                    <span class="tag">REST APIs</span>
+                    <span class="tag">PHP</span>
+                </div>
+            </div>
+            <div class="skill-card reveal">
+                <h3><i class="fa-solid fa-database"></i> Databases</h3>
+                <div class="tags">
+                    <span class="tag">SQLite</span>
+                    <span class="tag">SQL</span>
+                    <span class="tag">MongoDB</span>
+                </div>
+            </div>
+            <div class="skill-card reveal">
+                <h3><i class="fa-solid fa-screwdriver-wrench"></i> Tools</h3>
+                <div class="tags">
+                    <span class="tag">Git</span>
+                    <span class="tag">GitHub</span>
+                    <span class="tag">VS Code</span>
+                    <span class="tag">Cybersecurity Basics</span>
+                    <span class="tag">IoT Concepts</span>
+                </div>
+            </div>
+            <div class="skill-card reveal">
+                <h3><i class="fa-solid fa-robot"></i> AI Tools</h3>
+                <div class="tags">
+                    <span class="tag">ChatGPT</span>
+                    <span class="tag">Claude</span>
+                    <span class="tag">GitHub Copilot</span>
+                    <span class="tag">AI-Assisted Development</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section class="section" id="projects">
+    <div class="section-inner reveal">
+        <p class="eyebrow">What I've Built</p>
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card reveal">
+                <div class="project-icon"><i class="fa-solid fa-id-card"></i></div>
+                <h3>Personal Portfolio Website</h3>
+                <p>
+                    A full-stack personal portfolio with a responsive UI, backed by Django for
+                    dynamic content. SQLite persists contact form submissions, and admin features
+                    allow content updates without touching code.
+                </p>
+                <div class="tags">
+                    <span class="tag">HTML5</span>
+                    <span class="tag">CSS3</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Django</span>
+                    <span class="tag">SQLite</span>
+                </div>
+                <a href="YOUR_GITHUB_URL" target="_blank" rel="noopener noreferrer" class="project-link">
+                    View Code <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="project-card reveal">
+                <div class="project-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <h3>Sales CRM System</h3>
+                <p>
+                    A full-featured CRM to manage leads, track customer interactions, and visualize
+                    the sales pipeline in real time. Role-based access control keeps admin and user
+                    dashboards secure and scoped, with a clean Bootstrap UI for cross-device use.
+                </p>
+                <div class="tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">Bootstrap</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Django</span>
+                </div>
+                <a href="YOUR_GITHUB_URL" target="_blank" rel="noopener noreferrer" class="project-link">
+                    View Code <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= RESUME ================= -->
+<section class="section section-alt" id="resume">
+    <div class="section-inner reveal">
+        <p class="eyebrow">My Background</p>
+        <h2 class="section-title">Resume</h2>
+
+        <div class="resume-download">
+            <a href="{% static 'portfolio_design/files/resume.pdf' %}" download class="btn">
+                <i class="fa-solid fa-download"></i> Download Full Resume (PDF)
+            </a>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-block reveal">
+                <p class="timeline-date">2023 – Pursuing</p>
+                <h3>B.Tech, Computer Science & Engineering</h3>
+                <p class="timeline-sub">Silver Oak University, Ahmedabad · CGPA 8.5/10.0</p>
+                <p>Data Structures & Algorithms, Full Stack Web Development, Software Engineering, Operating Systems, Computer Architecture, AI-ML, Cyber Security, Basics of IoT.</p>
+            </div>
+            <div class="timeline-block reveal">
+                <p class="timeline-date">May 2026 – Jun 2026</p>
+                <h3>Software Development Intern</h3>
+                <p class="timeline-sub">Enjay IT Solutions Ltd., Bhilad · 1 Month</p>
+                <p>Contributed to frontend development on Real Solar CRM software; explored sales pipeline and lead tracking workflows in a production system.</p>
+            </div>
+            <div class="timeline-block reveal">
+                <p class="timeline-date">2022 – 2023</p>
+                <h3>HSC – Class 12 (Science)</h3>
+                <p class="timeline-sub">Swastik Science School, Rajkot · 60%</p>
+                <p>Physics, Chemistry, Mathematics; also studied Computer basics including HTML, CSS, and IT services.</p>
+            </div>
+            <div class="timeline-block reveal">
+                <p class="timeline-date">2020 – 2021</p>
+                <h3>SSC – Class 10 (CBSE)</h3>
+                <p class="timeline-sub">Shree Swaminarayan Gurukul Gyanbag International School, Junagadh · 81%</p>
+                <p>Social Studies, Science, Mathematics, Computer; additional coursework in Communication (English & Hindi).</p>
+            </div>
+            <div class="timeline-block reveal">
+                <p class="timeline-date">Certifications</p>
+                <h3>NPTEL – Java Programming (IIT Kharagpur)</h3>
+                <p>Core Java concepts, OOP principles, data structures in Java.</p>
+                <h3 style="margin-top: 14px;">Python Technology Concepts (Patel Web Solution)</h3>
+                <p>Python fundamentals, scripting, web development basics with Python.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section" id="contact">
+    <div class="section-inner reveal">
+        <p class="eyebrow">Get In Touch</p>
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact-wrap">
+            <div class="contact-info reveal">
+                <a href="mailto:satyarajsinhj72@gmail.com" class="contact-item">
+                    <i class="fa-solid fa-envelope"></i> satyarajsinhj72@gmail.com
+                </a>
+                <a href="tel:+919974626163" class="contact-item">
+                    <i class="fa-solid fa-phone"></i> +91 9974626163
+                </a>
+                <span class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i> Ahmedabad, Gujarat, India
+                </span>
+                <a href="YOUR_GITHUB_URL" target="_blank" rel="noopener noreferrer" class="contact-item">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/satyaraj-jadeja" target="_blank" rel="noopener noreferrer" class="contact-item">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+
+            <form class="contact-form reveal" method="POST" action="{% url 'home' %}#contact">
+                {% csrf_token %}
+                {% if form_success %}
+                    <p class="form-success">Thanks! Your message has been sent — I'll get back to you soon.</p>
+                {% endif %}
+                <div class="form-group">
+                    <label for="id_name">Name</label>
+                    {{ form.name }}
+                </div>
+                <div class="form-group">
+                    <label for="id_email">Email</label>
+                    {{ form.email }}
+                </div>
+                <div class="form-group">
+                    <label for="id_message">Message</label>
+                    {{ form.message }}
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
